@@ -1,109 +1,142 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>CSCE 190: Myya Sanders</title>
-        <link rel="stylesheet" href="styles.css">
-        <style>
-            .projects {
-                display: flex;
-                flex-wrap: wrap; /* condensed to save space */
-                justify-content: center;
-                text-align: center;
-            }
+<head>
+    <title>CSCE 190: Myya Sanders</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
 
-            .project {
-                width: 30%;
-                margin: 10px;
-                padding: 20px 15px;
-                background: rgb(2, 2, 2); /* pick a color */
-                border-radius: 25%;
-            }
+        h1, h2 {
+            text-align: center;
+            color: #222;
+        }
 
-            /* Strongly recommended CSS content */
-            .project img {
-                width: 300px;
-                height: 300px;
-                margin: 10px;
-                border: 2px solid rgb(253, 251, 251); /* choose a color */
-                display: block;
-                margin: auto;
-            }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
 
-            /* Suggested CSS content */
-            a {
-                text-decoration: none;
-                color: rgb(255, 255, 255);
-            }
+        .project {
+            width: 300px;
+            margin: 15px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
 
-            .project p {
-                text-align: center;
-                margin: 15px;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Myya Sanders</h1>
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
 
-        <div class="about">
-            <h2>About me</h2>
-            <p>Freshman at Usc Columbia striving to be a Software Developer for the NFL</p>
-        </div>
+        a {
+            text-decoration: none;
+            color: #007acc;
+        }
 
-        <div class="skills">
-            <h2>Skills</h2>
-        </div>
+        a:hover {
+            color: #005f99;
+        }
 
-        <div class="projects">
-            <h2>Highlighted projects</h2>
+        .about, .skills, .resume, .contact {
+            margin: 30px auto;
+            max-width: 800px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
 
-            <!-- Problem Statement Assignment -->
-            <section class="project">
-                <a href="files/problem statement.pdf" target="_blank"><h3>Problem Statement</h3></a>
-                <a href="files/problem statement.pdf" target="_blank">
-                    <img src="images/problem.png" alt="Problem Statement Screenshot">
-                </a>
-                <p>College students often struggle to manage their time effectively due to overwhelming schedules and lack of personalized planning tools.</p>
-            </section>
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
 
-            <!-- Affinity Diagram Assignment -->
-            <section class="project">
-                <a href="files/Affinity diagram.pdf" target="_blank"><h3>Affinity Diagram</h3></a>
-                <a href="files/Affinity diagram.pdf" target="_blank">
-                    <img src="images/Affinity diagram.png" alt="Affinity Diagram Screenshot">
-                </a>
-                <p>This affinity diagram organizes ideas into clusters such as Time Management Tools, Academic Pressure, Personal Wellness, Social Distractions, and Customization Features. It visualizes the root causes and potential solutions for improving student time management.</p>
-            </section>
-        </div>
-            <!-- Sketches Assignment -->
-            <section class="project">
-                <a href="files/Sketches.pdf" target="_blank"><h3>Sketches</h3></a>
-                <a href="files/Sketches.pdf" target="_blank">
-                    <img src="images/Sketch.png" alt="Sketches Screenshot">
-                </a>
-                <p>These sketches illustrate three different user scenarios for our solution, showing how the interface adapts to customer browsing, employee assistance, and package assembly. Each sketch highlights layout, flow, and functionality.</p>
-            </section>
-        </div>
+        .skills li {
+            background: #e6f2ff;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Myya Sanders</h1>
 
-           <div class="Resume">
-                <h2>Resume</h2>
-                <p> Professional Resume that highlights my qualifications and projects as a upcoming Software Developer</p>
-                <a href="files/Myya Resume (2).pdf" target="_blank"><h3>Resume</h3></a>
-                </a>
-           </div>
-                
-           <section class="project">
-<a href="https://github.com/sanders-code/CSCE145">
-<h3>CSCE145 java code</h3>
-</a>
-<a href="https://github.com/sanders-code/CSCE145">
-<img src="images/code.png">
-</a>
-<p>Code from an old course</p>
-</section>
-            
-           <div class="contact">
-            <h2>Contact me</h2>
-            <p>Email:Myyanoelle@gmail.com|Phone:803-209-7029</p>
-        </div>
-    </body>
+    <div class="about">
+        <h2>About Me</h2>
+        <p>Freshman at USC Columbia striving to be a Software Developer for the NFL.</p>
+    </div>
+
+    <div class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python, Java, C++</li>
+            <li>UI/UX Design</li>
+            <li>Problem Solving & Troubleshooting</li>
+        </ul>
+    </div>
+
+    <div class="projects">
+        <h2>Highlighted Projects</h2>
+
+        <section class="project">
+            <a href="files/problem statement.pdf" target="_blank"><h3>Problem Statement</h3></a>
+            <a href="files/problem statement.pdf" target="_blank">
+                <img src="images/problem.png" alt="Problem Statement Screenshot">
+            </a>
+            <p>College students often struggle to manage their time effectively due to overwhelming schedules and lack of personalized planning tools.</p>
+        </section>
+
+        <section class="project">
+            <a href="files/Affinity diagram.pdf" target="_blank"><h3>Affinity Diagram</h3></a>
+            <a href="files/Affinity diagram.pdf" target="_blank">
+                <img src="images/Affinity diagram.png" alt="Affinity Diagram Screenshot">
+            </a>
+            <p>This affinity diagram organizes ideas into clusters such as Time Management Tools, Academic Pressure, Personal Wellness, Social Distractions, and Customization Features.</p>
+        </section>
+
+        <section class="project">
+            <a href="files/Sketches.pdf" target="_blank"><h3>Sketches</h3></a>
+            <a href="files/Sketches.pdf" target="_blank">
+                <img src="images/Sketch.png" alt="Sketches Screenshot">
+            </a>
+            <p>These sketches illustrate three different user scenarios for our solution, showing layout, flow, and functionality.</p>
+        </section>
+
+        <section class="project">
+            <a href="https://github.com/sanders-code/CSCE145">
+                <h3>CSCE145 Java Code</h3>
+            </a>
+            <a href="https://github.com/sanders-code/CSCE145">
+                <img src="images/code.png" alt="Java Code Screenshot">
+            </a>
+            <p>Code from an old course.</p>
+        </section>
+    </div>
+
+    <div class="resume">
+        <h2>Resume</h2>
+        <p>Professional resume highlighting my qualifications and projects as an upcoming Software Developer.</p>
+        <a href="files/Myya Resume (2).pdf" target="_blank">View Resume (PDF)</a>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:Myyanoelle@gmail.com">Myyanoelle@gmail.com</a></p>
+        <p>Phone: 803-209-7029</p>
+    </div>
+</body>
 </html>

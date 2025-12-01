@@ -1,9 +1,73 @@
+/* General page styling */
 body {
-    background: rgb(151, 194, 255);
-    font-family: Arial, Helvetica, sans-serif,
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
-h1 {
-    color:rgb(255, 255, 255);
-    text-align: center;
 
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #222;
+}
+
+/* Section containers */
+.about, .skills, .resume, .contact {
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Skills list */
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #e6f2ff;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+/* Projects grid */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.project {
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Project images */
+.project img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007acc;
+}
+
+a:hover {
+    color: #005f99;
 }
