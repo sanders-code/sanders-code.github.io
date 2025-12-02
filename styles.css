@@ -23,6 +23,17 @@ h1, h2 {
     box-shadow: 0 4px 8px rgba(42, 31, 248, 0.1);
 }
 
+.about img {
+    max-width: 150px;   /* controls width */
+    height: auto;       /* keeps aspect ratio */
+    border-radius: 8px; /* optional: rounded corners */
+    display: block;     /* centers nicely with margin */
+    margin: 0 auto;     /* centers horizontally */
+}
+
+
+
+
 /* Skills list */
 .skills ul {
     list-style: none;
