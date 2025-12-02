@@ -105,6 +105,14 @@ h1, h2 {
     transform: translateY(-5px); /* subtle hover effect */
 }
 
+/* Center the Highlighted Projects heading like other sections */
+.projects > h2 {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 30px auto; /* centers and adds spacing below */
+    font-size: 1.8em;
+    color: #222;
+}
 
 
 
