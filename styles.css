@@ -73,6 +73,41 @@ h1, h2 {
     border-radius: 8px;
 }
 
+/* Center the Highlighted Projects heading */
+.projects h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    color: #222;
+}
+
+/* Neater project layout using grid */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px; /* space between cards */
+    margin: 20px auto;
+    max-width: 1000px; /* keeps layout contained */
+}
+
+/* Project card styling */
+.project {
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* subtle hover effect */
+}
+
+
+
+
 /* Links */
 a {
     text-decoration: none;
