@@ -78,51 +78,29 @@ color: #9ecbff;
     border-radius: 6px;
 }
 
-/* Projects grid */
+/* Make Projects match your other sections */
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
-}
-
-.project {
-    width: 300px;
-    margin: 15px;
+    margin: 30px auto;
+    max-width: 1000px;
     padding: 20px;
-    background: #fff;
+    background: #f4f2f2;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center;
-}
+    box-shadow: 0 4px 8px rgba(42, 31, 248, 0.1);
 
-/* Project images */
-.project img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-}
-
-/* Center the Highlighted Projects heading */
-.projects h2 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.8em;
-    color: #222;
-}
-
-/* Neater project layout using grid */
-.projects {
+    /* Grid for the project cards */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px; /* space between cards */
-    margin: 20px auto;
-    max-width: 1000px; /* keeps layout contained */
+    gap: 20px;
 }
 
-/* Project card styling */
+/* Center the section heading */
+.projects > h2 {
+    grid-column: 1 / -1;   /* spans full width */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Project card styling (now consistent) */
 .project {
     padding: 20px;
     background: #fff;
@@ -133,18 +111,8 @@ color: #9ecbff;
 }
 
 .project:hover {
-    transform: translateY(-5px); /* subtle hover effect */
+    transform: translateY(-5px);
 }
-
-/* Center the Highlighted Projects heading like other sections */
-.projects > h2 {
-    text-align: center;
-    width: 100%;
-    margin: 0 auto 30px auto; /* centers and adds spacing below */
-    font-size: 1.8em;
-    color: #222;
-}
-
 
 
 /* Links */
