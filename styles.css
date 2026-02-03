@@ -109,6 +109,14 @@ color: #9ecbff;
     text-align: center;
     transition: transform 0.2s ease;
 }
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centers EVERYTHING horizontally */
+    justify-content: center;
+    text-align: center;    /* centers text inside */
+    padding: 20px;
+}
 
 .project:hover {
     transform: translateY(-5px);
