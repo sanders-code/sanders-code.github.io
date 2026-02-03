@@ -3,133 +3,72 @@
 <head>
     <title>CSCE 190: Myya Sanders</title>
     <link rel="stylesheet" href="styles.css">
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background: #f4f4f9;
-        color: #333;
-        margin: 0;
-        padding: 0;
-    }
-
-    .navbar ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .navbar li {
-        display: inline-block;
-        margin: 0 15px;
-    }
-    .navbar
-        h1, h2 {
-            text-align: center;
-            color: #222;
-        }
-
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 20px;
-        }
-
-        .project {
-            width: 300px;
-            margin: 15px;
-            padding: 20px;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        .project img {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-        }
-
-        a {
-            text-decoration: none;
-            color: #007acc;
-        }
-
-        a:hover {
-            color: #005f99;
-        }
-
-        .about, .skills, .resume, .contact {
-            margin: 30px auto;
-            max-width: 800px;
-            padding: 20px;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        .skills ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .skills li {
-            background: #e6f2ff;
-            margin: 5px 0;
-            padding: 8px;
-            border-radius: 6px;
-        }
-    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <h1>Myya Sanders</h1>
+<nav class="navbar">
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-    <div class="about">
-        <h2>About Me</h2>
-         <img src="images/myya.png" alt="Myya Sanders headshot">
-        <p>Freshman at USC Columbia striving to be a Software Developer for the NFL.</p>
-    </div>
+<h1>Myya Sanders</h1>
 
-    <div class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python, Java, C++</li>
-            <li>Problem Solving & Troubleshooting</li>
-        </ul>
-    </div>
-        <section class="project">
-            <a href="https://github.com/sanders-code/CSCE145">
-                <h3>CSCE145 Java Code</h3>
-            </a>
-            <a href="https://github.com/sanders-code/CSCE145">
-                <img src="images/code.png" alt="Java Code Screenshot">
-            </a>
-            <p>Code from an old course.</p>
-        </section>
-    </div>
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <img src="images/myya.png" alt="Myya Sanders headshot">
+    <p>Freshman at USC Columbia striving to be a Software Developer for the NFL.</p>
+</section>
 
-    <div class="resume">
-        <h2>Resume</h2>
-        <p>Professional resume highlighting my qualifications and projects as an upcoming Software Developer.</p>
-        <a href="files/Myya Resume (2).pdf" target="_blank">View Resume (PDF) |<a href="resume.html">HTML version</a></a>
-    </div>
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>Python, Java, C++</li>
+        <li>Problem Solving & Troubleshooting</li>
+    </ul>
+</section>
 
-    <div class="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:Myyanoelle@gmail.com">Myyanoelle@gmail.com</a></p>
-        <p>Phone: 803-209-7029</p>
+<section id="projects" class="projects">
+    <h2>Highlighted Projects</h2>
+
+    <div class="project">
+        <a href="https://github.com/sanders-code/CSCE145">
+            <h3>CSCE145 Java Code</h3>
+        </a>
+        <a href="https://github.com/sanders-code/CSCE145">
+            <img src="images/code.png" alt="Java Code Screenshot">
+        </a>
+        <p>Code from an introductory Java course.</p>
     </div>
+</section>
+
+<section id="resume" class="resume">
+    <h2>Resume</h2>
+    <p>Professional resume highlighting my qualifications and projects as an upcoming Software Developer.</p>
+
+    <p><strong>Download Resume:</strong></p>
+    <a href="files/Myya Resume (2).pdf" target="_blank">View Resume (PDF)</a> |
+    <a href="resume.html">HTML version</a>
+
+    <hr>
+
+    <p><strong>My GitHub:</strong></p>
+    <p>
+        <a href="PASTE_YOUR_GITHUB_LINK_HERE" target="_blank">
+            PASTE_YOUR_GITHUB_LINK_HERE
+        </a>
+    </p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:Myyanoelle@gmail.com">Myyanoelle@gmail.com</a></p>
+    <p>Phone: 803-209-7029</p>
+</section>
+
 </body>
 </html>
