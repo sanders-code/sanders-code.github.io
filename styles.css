@@ -142,10 +142,16 @@ body {
     transform: translateY(-2px);
 }
 
-/* Featured Projects Section */
-.featured-projects {
-    padding: 60px 20px;
-    background-color: #f5f5f5;
+.btn-resume {
+    background-color: transparent;
+    color: royalblue;
+    border: 2px solid royalblue;
+}
+
+.btn-resume:hover {
+    background-color: royalblue;
+    color: white;
+}
 }
 
 .featured-projects h2,
